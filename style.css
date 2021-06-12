@@ -1,0 +1,201 @@
+body {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.header-container {
+  text-align: center;
+}
+
+.header-container h1 a {
+  font-size: 1.5em;
+}
+
+.customer-nav {
+  float: right;
+  margin-top: -50px;
+}
+
+.fa-search {
+  float: right;
+  cursor: pointer;
+}
+
+.navbar-full {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+}
+
+.navbar-full a {
+  padding: 8px;
+}
+
+.navbar-collapse {
+  display: none;
+}
+.navbar-collapse .fa-search {
+  float: right;
+  cursor: pointer;
+}
+
+.fa-bars {
+  cursor: pointer;
+}
+
+.fa-bars ul {
+  display: none;
+  background: #ededed;
+  list-style: none;
+  position: fixed;
+  left: 42%;
+  z-index: 4;
+  font-size: 0.7em;
+  padding: 5px;
+}
+
+.fa-bars ul li {
+  padding: 5px;
+}
+
+form {
+  display: none;
+  float: right;
+}
+
+.news a:link {
+  color: blue;
+}
+
+.headline img {
+  width: 100%;
+  height: auto;
+}
+.col-1 {
+  width: 33%;
+  float: left;
+}
+
+.col-2 {
+  width: 20%;
+  margin-left: 2%;
+  float: left;
+}
+
+.col-3 {
+  width: 19%;
+  margin-left: 2%;
+  float: left;
+}
+
+.col-4 {
+  width: 18%;
+  float: left;
+  margin-left: 1%;
+}
+
+.col-4 img {
+  width: 100%;
+  height: auto;
+}
+
+.col-3 img {
+  height: 150px;
+  margin-top: 10px;
+}
+
+.col-1 .article img,
+.col-2 .article img {
+  float: right;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+.article {
+  border-top: 1px solid;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+.category {
+  color: blue;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1600px) {
+  .col-4 {
+    display: none;
+  }
+  .news-container {
+    margin-left: 15%;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .news-container {
+    margin-left: 0;
+  }
+  .col-1 {
+    width: 40%;
+  }
+  .col-2 {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1285px) {
+  .customer-nav {
+    float: none;
+    padding-top: 40px;
+    padding-bottom: 22px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  body {
+    width: 100%;
+  }
+  .news {
+    border-top: 5px solid;
+  }
+  .col-1,
+  .col-2,
+  .col-3 {
+    width: 100%;
+    float: none;
+  }
+  .col-1 img,
+  .col-2 img,
+  .col-3 img {
+    float: right;
+  }
+  .article {
+    overflow: auto;
+    padding-bottom: 10px;
+  }
+  .navbar-full {
+    display: none;
+  }
+  .navbar-collapse {
+    display: block;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+  }
+  .logo h1 {
+    font-size: 1.3em;
+  }
+}
